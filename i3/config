@@ -201,11 +201,18 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
+# Need to remove window titlebars to make gaps work
+for_window [class=".*"] border pixel 0
+
 # Spacing for gaps
 gaps inner 20
+gaps outer -5
+
+# Only enable gaps on a workspace when there is at least one container
+smart_gaps on
 
 # Disable windows focus on mouse hover
 focus_follows_mouse no
 
-# Use chosen Nitrogen wallpaper
-exec nitrogen --restore &
+# Set some apps to open in floating mode by default
+#for_window [class="URxvt"] floating enable
