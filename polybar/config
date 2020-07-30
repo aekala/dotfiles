@@ -21,17 +21,17 @@ font-1 = FontAwesome5Free:style=Solid:size=13;0
 font-2 = FontAwesome5Brands:style=Solid:size=12;0
 font-3 = Material Icons:style=Regular:size=14;0
 modules-left = i3
-modules-right = spotify keyboard network alsa battery date time
+modules-right = spotify keyboard network alsa xbacklight battery date time
 separator = " | "
 padding = 1
-foreground = ${xrdb:color7:222}
-background = ${xrdb:color1:fff}
+foreground = ${xrdb:color0:222}
+background = #4e83fc
 line-size = 3
 border-top-size = 5
-border-top-color = ${xrdb:color1:fff}
+border-top-color = #4e83fc
 tray-position = right
 tray-padding = 2
-tray-background = ${xrdb:color1:fff}
+tray-background = #4e83fc
 
 [module/date]
 type = internal/date
@@ -65,7 +65,7 @@ label-volume = %percentage%%
 [module/i3]
 type = internal/i3
 format =  <label-state>
-label-focused-foreground = #8c9cff
+label-focused-foreground = ${xrdb:color7:222}
 label-focused-underline = #ffffff
 
 [module/network]
@@ -92,4 +92,11 @@ label-layout =  %layout%
 label-indicator-on-capslock = 
 blacklist-0 = num lock
 blacklist-1 = scroll lock
+
+[module/xbacklight]
+type = internal/xbacklight
+format-prefix = " "
+format = <label>
+label = %percentage%%
+
 

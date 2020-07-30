@@ -39,6 +39,9 @@ exec_always --no-startup-id bash ~/.config/polybar/launch.sh
 # Launch redshift on startup
 exec_always --no-startup-id bash ~/.config/redshift/launch.sh
 
+# Set picom config file path to ~/.config/picom.config
+exec_always --no-startup-id picom --config ~/.config/picom.conf
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -67,6 +70,12 @@ bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
 #bindsym $mod+d exec rofi -show drun -theme Arc-Dark -icon-theme "Papirus" -show-icons
 bindsym $mod+d exec rofi -show drun -theme ~/.cache/wal/colors-rofi-dark -icon-theme "Papirus" -show-icons  
+
+# launch Google Chrome 
+bindsym $mod+Shift+g exec google-chrome-stable
+
+# launch KDE Settings 
+bindsym $mod+Shift+s exec systemsettings5
 
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
