@@ -68,4 +68,6 @@ element-text {
 
 element-text selected {
   text-color: @purple;
+  background-color: #465278;
+  border-radius: 5px;
 }
