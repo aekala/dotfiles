@@ -6,6 +6,14 @@
 super + Return
 	alacritty
 
+#Volume Control
+XF86AudioLowerVolume
+	pavolume -5%
+XF86AudioRaiseVolume
+	pavolume +5%
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+
 # program launcher
 super + d
 	rofi -show run -theme ~/.config/rofi/dracula.rasi -icon-theme "Papirus" -show-icons
