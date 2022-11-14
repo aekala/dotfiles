@@ -24,7 +24,7 @@ super + p
 
 # program launcher
 super + d
-	rofi -show run -theme ~/.config/rofi/dracula.rasi -icon-theme "Papirus" -show-icons
+	rofi -show drun -theme ~/.config/rofi/dracula.rasi -icon-theme "Papirus" -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape
