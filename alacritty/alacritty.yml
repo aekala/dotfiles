@@ -1,3 +1,8 @@
+window:
+  opacity: 0.8
+  padding: 
+    x: 25
+    y: 25
 colors: 
   # Default colors
     primary:
