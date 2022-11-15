@@ -17,6 +17,16 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+# Mice bindings
+#   Set mouse 1 to move floating windows
+bspc config pointer_action1 move
+
+#   Mouse 2 button resizes the window by side
+bspc config pointer_action2 resize_side
+
+#   Mouse 3 button (right mouse) resize by corner
+bspc config pointer_action2 resize_corner
+
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
