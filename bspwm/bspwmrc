@@ -3,6 +3,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 xrandr --output HDMI-2 --mode 3440x1440 --rate 60 --pos 0x0
 xrandr --output VGA-1 --mode 1920x1200 --rate 60 --pos 0x0
 xrandr --output VGA-1 --right-of HDMI-2 
+xrandr --output VGA-1 --rotate right
 nitrogen --restore
 picom &
 $HOME/.config/polybar/launch.sh
@@ -13,8 +14,8 @@ bspc config focused_border_color "#ca895f"
 bspc config normal_border_color  "#808080"
 bspc config window_gap           12
 
-bspc monitor HDMI-2 -d I II III IV V  
-bspc monitor VGA-1 -d VI VII VIII IX 
+bspc monitor HDMI-2 -d I II III IV V VI VII VIII IX 
+#bspc monitor VGA-1 -d VI VII VIII IX 
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
