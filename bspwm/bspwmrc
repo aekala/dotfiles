@@ -9,8 +9,8 @@ $HOME/.config/polybar/launch.sh
 xsetroot -cursor_name left_ptr &
 
 bspc config border_width         2
-bspc config focused_border_color "#ffffff"
-bspc config normal_border_color  "#ca895f"
+bspc config focused_border_color "#ca895f"
+bspc config normal_border_color  "#808080"
 bspc config window_gap           12
 
 bspc monitor HDMI-2 -d I II III IV V  
@@ -19,6 +19,7 @@ bspc monitor VGA-1 -d VI VII VIII IX
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+bspc config top_padding   	 40 
 
 # Mice bindings
 #   Set mouse 1 to move floating windows

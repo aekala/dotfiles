@@ -8,11 +8,11 @@ super + Return
 
 # volume control
 XF86AudioLowerVolume
-	pavolume -5%
+	pavolume -5% 
 XF86AudioRaiseVolume
-	pavolume +5%
+	pavolume +5% 
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	pavolume toggle
 
 # song control
 super + i
